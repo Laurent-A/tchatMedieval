@@ -1,0 +1,21 @@
+#messages {
+    & .message {
+        padding: .4em;
+        border-bottom: 1px solid #efefef;
+        display: flex;
+        align-items: center;
+        & .info{
+            padding: 10px;
+        }
+        & .info .auteur{
+            font-size: 0.9em;
+            color: #444;
+        }
+
+
+        & .info .message-text {
+            font-size: 1.2em;
+            color : #222;
+        }
+    }
+}
