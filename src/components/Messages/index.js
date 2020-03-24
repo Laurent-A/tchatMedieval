@@ -16,7 +16,10 @@ const Message = () => (
                 Bonjour à tous !
             </p>
         </div>
+
     </div>
+
+    
  );
 
 const Messages = () => (

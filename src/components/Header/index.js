@@ -1,5 +1,5 @@
 import React from 'react';
-import Settings from '../Settings';
+import Settings from '../../container/Settings';
 import './style.scss';
 
 const Logo = () => (
@@ -12,7 +12,7 @@ const Header = () => (
 
     <div id="header">
         <Logo />
-        <Settings open/>
+        <Settings />
     </div>
     
 );
