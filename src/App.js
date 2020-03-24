@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header'
-import Messages from './components/Messages'
-import FormMessage from './components/FormMessage'
+import Messages from './container/Messages'
+import FormMessage from './container/FormMessage'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 

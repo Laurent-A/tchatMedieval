@@ -15,9 +15,9 @@ const SettingsInput = ({ value, changeSettings, submitSettings }) => {
     }
 
     const changementDuFormAuteur = (event) => {
+        // dès que j'envoi l'information mon formulaire redevient une croix
         event.preventDefault();
         submitSettings();
-        
     }
 
     return (

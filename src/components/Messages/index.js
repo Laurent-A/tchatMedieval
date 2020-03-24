@@ -4,16 +4,16 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import './style.scss';
 
 
-const Message = () => (
+const Message = ({ auteur, message }) => (
     <div className="message">
        
         <div className="info">
             <p className="auteur">
             <FontAwesomeIcon icon={ faUser } />
-                Laurent
+                { auteur }
             </p>
             <p className="message-texte">
-                Bonjour à tous !
+                { message }
             </p>
         </div>
 
@@ -22,12 +22,10 @@ const Message = () => (
     
  );
 
-const Messages = () => (
+const Messages = ({ messages }) => (
 
     <div id="messages">
-        <Message />
-        <Message />
-        <Message />
+        { messages.map(message => <Message key= { message.message } { ...message }/>)}
     </div>
     
 );
