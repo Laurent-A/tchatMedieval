@@ -13,9 +13,10 @@ const CHANGE_SETTINGS = 'CHANGE_SETTINGS';
 const SUBMIT_SETTINGS = 'SUBMIT_SETTINGS';
 
 // Partie formulaire message
-const MESSAGE_CHANGE = 'MESSAGE_CHANGE';
-const MESSAGE_SUBMIT = 'MESSAGE_SUBMIT';
-
+export const MESSAGE_CHANGE = 'MESSAGE_CHANGE';
+export const MESSAGE_SUBMIT = 'MESSAGE_SUBMIT';
+export const WEBSOCKET_CONNECT = 'WEBSOCKET_CONNECT';
+export const NEW_MESSAGE = 'NEW_MESSAGE';
 
 // ##############REDUCER#############
 const reducer = (state = initialState, action = {}) => {
@@ -48,12 +49,14 @@ const reducer = (state = initialState, action = {}) => {
             return {
                 // le message envoyé nourrit mon tableau des message, il est composé d'un objet avec l'auteur et le message qui se trouve dans le state actuel
                 ...state,
-                messages: [...state.messages, {
-                    auteur: state.settingsInput,
-                    message: state.messageInput,
-                }],
                 messageInput: '',
-            }            
+            } 
+        case NEW_MESSAGE:
+            return {
+                ...state,
+                messages: [...state.messages, action.message]
+            }
+                   
         default:
         return state;
     }
@@ -83,4 +86,12 @@ export const messageChange = (text) => ({
     text
 });
 
+export const webSocketConnect = () => ({
+    type: WEBSOCKET_CONNECT,
+});
+
+export const newMessage = (message) => ({
+    type: NEW_MESSAGE,
+    message,
+});
 export default reducer;
