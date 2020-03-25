@@ -1,15 +1,22 @@
 #messages {
     & .message {
         padding: .4em;
-        border-bottom: 1px solid #efefef;
+        border-bottom: 1px solid #222;
         display: flex;
         align-items: center;
         & .info{
             padding: 10px;
         }
         & .info .auteur{
-            font-size: 0.9em;
+            font-weight: bold;
+            font-size: 1.2em;
             color: #444;
+        }
+
+        & .image {
+
+            width: 30px;
+            height: 30px;
         }
 
 
@@ -18,4 +25,13 @@
             color : #222;
         }
     }
+
+   
+}
+
+#bodyMessage{
+    background-image: url('../../style/image/fondMessage.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

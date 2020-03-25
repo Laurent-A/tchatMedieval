@@ -1,5 +1,5 @@
 const initialState = {
-    settingsOpened: false,
+    settingsOpened: true,
     settingsInput:'',
     messages: [],
     messageInput: '',

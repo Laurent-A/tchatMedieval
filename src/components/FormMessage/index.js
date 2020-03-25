@@ -18,6 +18,7 @@ const FormMessage = ({ input, messageChange, messageSubmit }) => {
         <div id="formMessage">
             <Form onSubmit={ handleMessageSubmit }>
                 <Form.Control
+                    class="border border-dark"
                     value = { input }
                     onChange = { handleInputChange}
                     placeholder="Saisissez votre message" />

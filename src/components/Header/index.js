@@ -4,7 +4,7 @@ import './style.scss';
 
 const Logo = () => (
     <div className="logo">
-        <div>Le fond du fond</div>
+        <div className="texteLogo">Le TCHAT du moyen age</div>
     </div>
 );
 

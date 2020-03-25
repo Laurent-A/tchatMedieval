@@ -1,0 +1,8 @@
+#app {
+    background-image: url('../src/style/image/fondMessage.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40em;
+;
+}

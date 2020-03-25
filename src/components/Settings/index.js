@@ -1,7 +1,5 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
 import './style.scss';
 
@@ -15,7 +13,7 @@ const SettingsInput = ({ value, changeSettings, submitSettings }) => {
     }
 
     const changementDuFormAuteur = (event) => {
-        // dès que j'envoi l'information mon formulaire redevient une croix
+        // dès que j'envoi l'information mon formulaire redevient une les épées
         event.preventDefault();
         submitSettings();
     }
@@ -24,6 +22,7 @@ const SettingsInput = ({ value, changeSettings, submitSettings }) => {
 
     <Form onSubmit = { changementDuFormAuteur }>
         <Form.Control 
+            class="border border-dark"
             type="texte" 
             placeholder="Entrée votre pseudo" 
             value={ value }
@@ -35,7 +34,7 @@ const SettingsInput = ({ value, changeSettings, submitSettings }) => {
 const PlusButton = ({ onClick}) => (
 
     <div onClick={onClick}>
-        <FontAwesomeIcon className="font" icon={ faPlus } />
+        <img src="https://www.flaticon.com/premium-icon/icons/svg/2277/2277296.svg" alt="" className="image"/>
     </div>
 
 );

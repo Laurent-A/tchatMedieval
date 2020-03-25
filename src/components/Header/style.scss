@@ -1,16 +1,19 @@
 #header {
     display : flex;
     height: 40px;
-    background : #cdcdcd;
+    background : #902a11;
     justify-content : space-between;
     align-items: center;
+    padding: 2em;
     &.logo {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 1.7em;
         padding: .3em;
+
     }
+    
     &.settings{
         display: flex;
         justify-content: center;
@@ -18,4 +21,11 @@
         font-size: 1.7em;
         padding: .3em;
     }
+    
+}
+
+.texteLogo {
+    font-weight: bold;
+    font-size: 1.9em;
+    color: #e3db86;
 }
